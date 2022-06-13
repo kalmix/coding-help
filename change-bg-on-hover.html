@@ -1,0 +1,45 @@
+<!-- Working Demo https://codepen.io/kalmix/pen/OJQaGPm -->
+<body>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@700&family=Poppins:wght@900&family=Roboto+Mono:wght@700&display=swap");
+
+        body {
+            font-family: "Poppins", sans-serif;
+            transition: all 1s;
+            background-color: #353535;
+        }
+
+        div {
+            font-size: 50px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+    <title>change-color</title>
+    <div class="container">
+        <!-- On mouse hover change bgcolor -->
+        <div id="rojo" onmouseover="bgChange('red')" onmouseout="bgChange('#353535')">Rojo 🟥</div>
+        <div id="Verde" onmouseover="bgChange('green')" onmouseout="bgChange('#353535')">Verde 🟩</div>
+        <div id="Azul" onmouseover="bgChange('blue')" onmouseout="bgChange('#353535')">Azul 🟦</div>
+    </div>
+    <p>RGB (Help for discord server)</p>
+    <script>
+        //change bg
+        function bgChange(bg) {
+            document.body.style.background = bg;
+        }
+    </script>
+</body>
