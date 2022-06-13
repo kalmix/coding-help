@@ -1,0 +1,8 @@
+/* limit the number of lines, change line-clamp for the desired number of lines */
+.limit {
+     overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     line-clamp: 2;
+     -webkit-box-orient: vertical;
+}
