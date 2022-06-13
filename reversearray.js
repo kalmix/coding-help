@@ -2,7 +2,7 @@
 var inputarray = [];
 var lenght = 10;
 for (var a = 0; a < lenght; a++) {
-    inputarray[a] = prompt('Introduce el elemento número ' + (a + 1) + ' del array');
+    inputarray[a] = prompt('Input the element number ' + (a + 1) + ' of the array');
 }
 console.log(inputarray);
 reversed = inputarray.reverse();
