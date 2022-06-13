@@ -1,3 +1,4 @@
+//return nxn matrix with random number on n-range
 #include <iostream>
 #include <stdlib.h>
 
