@@ -1,0 +1,20 @@
+.animatedbg {
+     /* Set your gradient */
+     background: linear-gradient(285deg, #b244be, #265fc8);
+     background-size: 400% 400%;
+     /* Change the speed by altering the duration */
+     -webkit-animation: animated 10s ease infinite;
+     -moz-animation: animated 10s ease infinite;
+     animation: animated 10s ease infinite;
+}
+ @-webkit-keyframes animated {
+     0%{
+        background-position:0% 50%
+    }
+     50%{
+        background-position:100% 50%
+    }
+     100%{
+        background-position:0% 50%
+    }
+}
